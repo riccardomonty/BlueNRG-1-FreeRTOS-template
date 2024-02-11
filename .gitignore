@@ -1,0 +1,19 @@
+# Git ignore file
+#
+# MyProject template for STEVAL-IDB007V1M
+#
+# - C code repo
+# - Keil toolchain
+# - BlueNRG-1 DK 3.2.3 (only needed files)
+
+# Keil output path
+MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*.o
+MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*.crf
+MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*.htm
+MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*.axf
+MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*.d
+# keep build log
+!MDK-ARM/STEVAL-IDB007V1M/Release/Objects/*_log.htm
+
+
+MDK-ARM/STEVAL-IDB007V1M/Release/Listings/libbluenrg1_static_stack.lst

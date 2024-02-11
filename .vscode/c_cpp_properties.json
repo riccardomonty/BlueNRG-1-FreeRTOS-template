@@ -1,0 +1,61 @@
+{
+    "env": {
+        "project_name": "MyProject",
+        "project_IDE_include_path": "C:/Keil_v5/ARM/ARM_Compiler_5.06u7/include",
+        "project_include_paths": [
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/BLE_Application/layers_inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/BLE_Application/Utils/inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/BLE_Application/OTA/inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/BlueNRG1_Periph_Driver/inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/Bluetooth_LE/inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/CMSIS/Device/ST/BlueNRG1/Include",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/CMSIS/Include",        
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/FreeRTOS/BlueNRG",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/FreeRTOS/Source/include",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/FreeRTOS/Source/portable/RVDS/ARM_CM0",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/hal/inc",
+            "${workspaceFolder}/BlueNRG-1_2 DK 3.2.3/Library/SDK_Eval_BlueNRG1/inc",
+            "${workspaceFolder}/src"
+        ],
+        "project_src_paths": [
+            "${workspaceFolder}/src"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "VsCode Keil",
+            // "compilerPath": "C:/Keil_v5/ARM/ARM_Compiler_5.06u7/bin/armcc.exe",
+            "cppStandard": "${default}",
+            "cStandard": "c99",
+            "intelliSenseMode": "${default}",
+            // "configurationProvider": "${default}",
+            "includePath": [
+                "${project_IDE_include_path}",
+                "${project_include_paths}"
+            ],
+            "defines": [
+                // "DEBUG",
+                "BLUENRG1_DEVICE",
+                "LS_SOURCE=LS_SOURCE_EXTERNAL_32KHZ",
+                // "HS_SPEED_XTAL=HS_SPEED_XTAL_32MHZ",
+                "HS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ",
+                "SAVE_CONTEXT_ON_CSTACK=0",
+                "SMPS_INDUCTOR=SMPS_INDUCTOR_10uH",
+                "USER_BUTTON=BUTTON_2",
+                "USE_FULL_ASSERT",
+                "__CC_ARM",
+                "__UVISION_VERSION=539"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                    // "${project_IDE_include_path}",
+                    // "${project_include_paths}",
+                    // "${project_src_paths}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

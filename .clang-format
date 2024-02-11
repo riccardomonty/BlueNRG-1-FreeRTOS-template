@@ -1,0 +1,97 @@
+
+##########################################
+###     Document formatter settings    ###
+##########################################
+# keep this file in workspace root folder
+
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+### clang format styles , but only "LLVM" is supported by VsCode
+# BasedOnStyle: "LLVM"
+# BasedOnStyle: "Google"
+# BasedOnStyle: "Chromium"
+# BasedOnStyle: "Mozilla"
+# BasedOnStyle: "WebKit"
+# BasedOnStyle: "Microsoft"
+# BasedOnStyle: "GNU"
+
+---
+# typical Visual Studio Code configuration
+BasedOnStyle: "LLVM"
+UseTab: Never
+IndentWidth: 4
+BreakBeforeBraces: Allman
+# BreakBeforeBraces: Linux
+# BreakBeforeBraces: Custom
+# BraceWrapping:
+#     AfterClass: false
+#     AfterEnum: false
+#     AfterStruct: false
+#     SplitEmptyFunction: false
+---
+
+# A column limit of 0 means that there is no column limit. 
+# In this case, clang-format will respect the input’s line breaking decisions within statements 
+# unless they contradict other rules.
+ColumnLimit: 0
+
+Language: Cpp 
+
+#############################################
+###                  Align                ###
+#############################################
+# Align - DontAlign - AlwaysBreak (follow first param position) - BlockIndent (close bracket go to next line)
+AlignAfterOpenBracket: BlockIndent
+# The choices are: - None - Consecutive - AcrossEmptyLines - AcrossComments - AcrossEmptyLinesAndComments
+AlignConsecutiveAssignments : Consecutive
+AlignConsecutiveBitFields : AcrossEmptyLinesAndComments
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+# ***following affect main function space (with AcrossEmptyLines main moved to right!)
+AlignConsecutiveDeclarations: Consecutive
+AlignEscapedNewlines: Right
+# Align - DontAlign - AlignAfterOperator
+AlignOperands: Align
+AlignTrailingComments: true
+
+AllowShortIfStatementsOnASingleLine: false
+
+# None - NonAssignment - All
+BreakBeforeBinaryOperators: All
+
+# Indent width for line continuations.
+ContinuationIndentWidth: 4
+
+# Force pointers to the type for C++.
+DerivePointerAlignment: false
+PointerAlignment: Left
+
+# IncludeBlocks (Preserve - Merge - Regroup)
+IncludeBlocks : Merge
+
+#############################################
+###                 Indent                ###
+#############################################
+IndentCaseBlocks : true
+IndentCaseLabels: true
+IndentExternBlock: AfterExternBlock
+IndentGotoLabels : true
+
+# The preprocessor directive indenting style to use. (None - BeforeHash - AfterHash)
+IndentPPDirectives: BeforeHash
+IndentWrappedFunctionNames: true
+
+
+# InsertBraces: true  # ***unknown key
+
+# The number of columns to use for indentation of preprocessor statements. When set to -1 (default) IndentWidth is used also for preprocessor statements.
+PPIndentWidth: -1
+
+ReferenceAlignment: Left
+
+# StatementAttributeLikeMacros : [__attribute__,__GNUC__,'endif']
+# StatementMacros : [__attribute__,__GNUC__]
+
+
+# SeparateDefinitionBlocks: Always    # ***unknown key
+
+SpacesBeforeTrailingComments: 4

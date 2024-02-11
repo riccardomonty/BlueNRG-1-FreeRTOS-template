@@ -1,0 +1,27 @@
+{
+    "python.experiments.enabled": false,
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.launchArgs": [],
+    "files.associations": {
+        "bluenrg1_gpio.h": "c",
+        "freertos.h": "c",
+        "portmacro.h": "c",
+        "ble_const.h": "c",
+        "stack_user_cfg.h": "c",
+        "bluenrg1_stack.h": "c",
+        "sdk_eval_led.h": "c",
+        "queue.h": "c",
+        "stack_macros.h": "c",
+        "freertosconfig.h": "c",
+        "task.h": "c",
+        "bluenrg1.h": "c",
+        "misc.h": "c",
+        "bluenrg1_uart.h": "c",
+        "beacon_config.h": "c"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "C_Cpp.loggingLevel": "Debug",
+    "C_Cpp.intelliSenseEngineFallback": "enabled"
+}

@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "echo ${workspaceFolder}",
+            "type": "shell",
+            "command": "echo ${workspaceFolder}"
+        },
+        {   // non funziona con variabili non predefinite
+            "label": "echo_1",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "${env:project_name}"
+            ]
+        },
+        {   // non funziona con variabili non predefinite
+            "label": "echo_2",
+            "type": "shell",
+            "command": "echo ${project_name}",
+        }
+    ]
+
+}
